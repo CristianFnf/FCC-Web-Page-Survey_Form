@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body style="color: white;">
+    <form  id="survey-form">
+        <img id="cat" src="Resources/oie_transparent.png" alt="acostado" width="260px">
+        <main>
+            <section class="typography">
+                <h6 style="background-color: transparent;">survey form</h6>
+                <div class="font-family">
+                    <div class="font-family-light">
+                        <h1 id="title">PetSpace</h1>
+                        <h4>This survey form is for the lovers of the animals and your's pets.</h4>
+                    </div>
+                </div>
+                <div class="font-example">
+                    <div class="font-example__bodytext">
+                        <h6 class="subheader">Lover of animals</h6>
+                        <p id="description"><strong> This pet survey is a test survey for my portfolio although I have to say that I like
+                                animals a lot and I have pets so I take this opportunity to ask you some questions and
+                                probably friends ;)</strong></p>
+                        <p><em> Animals are very good friends; they don't ask questions and don't criticize.</em></p>
+                        <p><em>George Eliot</em></p>
+                    </div>
+                </div>
+                <img id="Doggy" src="Resources/oie_transparent(4).png" alt="" width="200px">
+
+            </section>
+            <section class="inputs-selects">
+                <div class="inputs">
+                    <div class="input__wrapper">
+                        <label id="name-label" class="label-form">What is your name?</label>
+                        <input id="name" class="input-form" type="text" placeholder="Name" required />
+                        <p class="feedback-form">Write your name</p>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="input__wrapper">
+                        <label class="label-form">What is your pet name?</label>
+                        <input class="input-form" type="text" placeholder="Pet name" />
+                        <p class="feedback-form">Write your pet name</p>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="input__wrapper" style="padding-top: 24px;">
+                        <label id="email-label" class="label-form">Write you email please</label>
+                        <input id="email" class="input-form" type="email" placeholder="Email" required />
+                        <p class="feedback-form">example: example@email.com</p>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="input__wrapper">
+                        <label id="number-label" class="label-form">Do you have any pets? And if so, how many do you have? If not, how
+                            many would you like to have?</label>
+                        <input id="number" class="input-form" type="number" placeholder="Number of pets" min="0" max="6" required />
+                        <p class="feedback-form"> min: 0 and max:6 :P</p>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div>
+                        <label>What is your favorite animal?</label>
+                        <select id="dropdown" type="text" placeholder="Chose an option...">
+                            <option value="0">Chose an option...</option>
+                            <option value="1">Cats</option>
+                            <option value="2">Dogs</option>
+                            <option value="3">Turtles</option>
+                            <option value="4">Birds</option>
+                            <option value="5">Fishes</option>
+                            <option value="6">Other...</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="radios" class="radio-buttons">
+                    <h6 class="subheader">Where do your pets sleep?</h6>
+                    <div class="radio">
+                        <input id="radio-1" type="radio" name="radio-test" value="1" />
+                        <label for="radio-1">With me in my room</label>
+                    </div>
+                    <div class="radio">
+                        <input id="radio-2" type="radio" name="radio-test" value="2" />
+                        <label for="radio-2">In my living room</label>
+                    </div>
+                    <div class="radio">
+                        <input id="radio-3" type="radio" name="radio-test" value="3" />
+                        <label for="radio-3">In the bed I bought her</label>
+                    </div>
+                    <div class="radio">
+                        <input id="radio-4" type="radio" name="radio-test" value="4" />
+                        <label for="radio-4">Wherever you want</label>
+                    </div>
+                </div>
+                <div id="checkboxees" class="checkboxes">
+                    <h6 class="subheader">Do you pamper your pet very much?</h6>
+                    <div class="checkbox">
+                        <input id="checkbox-1" type="checkbox" value="1"/>
+                        <label for="checkbox-1">I give him plenty of food to keep him happy<span class="box"></span></label>
+                    </div>
+                    <div class="checkbox">
+                        <input id="checkbox-2" type="checkbox" value="2"/>
+                        <label for="checkbox-2">I pet her a lot so she knows she's special<span class="box"></span></label>
+                    </div>
+                    <div class="checkbox">
+                        <input id="checkbox-3" type="checkbox" value="3"/>
+                        <label for="checkbox-3">I don't coddle my pet too much just once in a while<span class="box"></span></label>
+                    </div>
+                    <div class="checkbox">
+                        <input id="checkbox-4" type="checkbox" value="4"/>
+                        <label for="checkbox-4">just a little bit when I get home<span class="box"></span></label>
+                    </div>
+                </div>
+                <div class="textarea-select">
+                    <div class="input__wrapper">
+                        <h6 class="subheader">What did you think of this survey?</h6>
+                        <textarea type="text" placeholder="leave a comment (>‿◠)✌"></textarea>
+                    </div>
+                </div>
+                <div>
+                    &nbsp;
+                </div>
+                <div class="submit-button " style="text-align: center;">
+                    <input id="submit" type="submit" class="button button1"value="Default Button"/>
+                </div>
+            </section>
+        </main>
+    </form>
+    <footer><a href="https://www.freepik.com/free-photos-vectors/music">Music vector created by freepik - www.freepik.com</a></footer>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>

@@ -1,0 +1,414 @@
+:root {
+    --canvasColor: #f9f9f9;
+  }
+  
+  body {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 17px;
+    text-align: center;
+    transition: all .3s ease;
+  }
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  main {
+    --neutralShade1: #f2f2f2;
+    --neutralShade2: #e8e9e9;
+    --neutralShade3: #d1d3d4;
+    --neutralShade4: #babdbf;
+    --neutralShade5: #4b4f52;
+    --neutralShade6: #4b4f52;
+    --neutralShade7: #4b4f52;
+    --neutralShade8: #212122;
+    --grayColor: #4b4f52;
+    --lightGrayColor: #4b4f52;
+    --borderRadius: 6px;
+    --boxShadow: 0 2px 5px rgba(#333, 0.2);
+  }
+  
+  /*overall layout*/
+  main {
+    font-family: "Poppins", sans-serif;
+    width: 90%;
+    max-width: 1050px;
+    margin: 3em auto 0;
+    border: 1px solid var(--accentColor);
+    display: grid;
+    grid: repeat(5, fit-content(300px))/repeat(4, 1fr);
+    grid-template-areas: "typography typography typography typography" "colors buttons buttons links" "inputs inputs inputs inputs" "badges tooltips alerts alerts" "loading tooltips alerts alerts";
+    color: var(--foregroundColor);
+    text-align: left;
+  }
+  
+  main > section {
+    position: relative;
+  }
+  main > section > h6 {
+    color: var(--accentColor);
+    background: var(--canvasColor);
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    padding: 0 10px;
+  }
+  main > section h6.subheader {
+    color: var(--grayColor);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  #Doggy{
+      margin-left: 360px;
+  }
+  #cat{
+      margin-left: 60px;
+  }
+  #submit{
+      margin-left: 15px;
+      border: 1px solid white;
+      border-radius: 3px;
+  }
+
+  .button {
+    background-color: transparent; /* Green */
+    border: none;
+    color: transparent;
+    padding: 6px 20px 6px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button1 {
+    background-color: transparent; 
+    color: white; 
+    border: 2px linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);;
+  }
+
+  .button1:hover {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #53b3b9, #54c4bc);
+    color: black;
+  }
+  
+
+  .typography {
+    grid-area: typography;
+    border-bottom: 1px solid var(--accentColor);
+  }
+
+  /*typography*/
+  strong {
+    font-weight: 500;
+  }
+  
+  em {
+    font-style: italic;
+  }
+  
+  h1 {
+    font: 700 48px/1.2 "Poppins", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font: 700 32px/1.2 "Poppins", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font: 700 24px/1.2 "Poppins", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    font: 700 20px/1.2 "Poppins", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  h5 {
+    font: 500 18px/1.2 "Poppins", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  h6 {
+    font: 500 16px/1.2 "Poppins", sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .font-family {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .font-family > div {
+    flex: 1 1 30%;
+    padding: 30px 30px 0;
+    min-width: 10em;
+  }
+  
+  .font-family-medium > * {
+    font-weight: 500;
+  }
+  
+  .font-family-light > * {
+    font-weight: 300;
+  }
+  
+  .font-example {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .font-example > div {
+    flex: 1 1 45%;
+    padding: 30px;
+    min-width: 16em;
+  }
+  .font-example p {
+    margin-bottom: 15px;
+  }
+
+option{
+    color: black;
+    background-color: transparent;
+}
+
+  .inputs-selects {
+    font-family: "Poppins", sans-serif;
+    padding: 40px 30px;
+    grid-area: inputs;
+    display: grid;
+    grid-auto-flow: dense;
+    grid: repeat(2, max-content)/repeat(6, 1fr);
+    grid-gap: 30px;
+    border-bottom: 1px solid var(--accentColor);
+  }
+  .inputs-selects .inputs {
+    grid-column: span 3;
+  }
+  .inputs-selects .textarea-select {
+    grid-column: span 3;
+  }
+  .inputs-selects .inputs .input__wrapper:last-child,
+  .inputs-selects .textarea-select .input__wrapper:last-child {
+    margin: 0;
+  }
+  .inputs-selects .toggle-buttons,
+  .inputs-selects .checkboxes,
+  .inputs-selects .radio-buttons {
+    grid-column: span 3;
+  }
+  .inputs-selects .submit-button{
+      grid-column: span 6;
+      width: 15%;
+      padding-left: 38%;
+  }
+
+    /*inputs*/
+    .input__wrapper {
+        margin-bottom: 30px;
+      }
+      
+      .label-form {
+        font-weight: 500;
+        display: block;
+        margin-bottom: 5px;
+      }
+      
+      input.input-form,
+      select,
+      textarea {
+        height: 50px;
+        font-size: 16px;
+        border: 2px solid var(--neutralShade3);
+        width: 100%;
+        padding: 12px;
+        font-family: "Poppins", sans-serif;
+        border-radius: var(--borderRadius);
+        color: var(--foregroundColor);
+        background: var(--backgroundColor);
+      }
+      input.input-form:focus, input.input-form.active,
+      select:focus,
+      select.active,
+      textarea:focus,
+      textarea.active {
+        outline: none;
+        border-color: var(--primaryColor);
+      }
+      input.input-form:disabled,
+      select:disabled,
+      textarea:disabled {
+        cursor: not-allowed;
+        background: var(--neutralShade6);
+        opacity: 0.6;
+      }
+      
+      textarea {
+        resize: vertical;
+        min-height: 117px;
+      }
+      
+      select {
+        height: 45px;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+      select option {
+        font-weight: 300;
+      }
+      
+      .input__validator {
+        position: relative;
+      }
+      .input__validator__status {
+        position: absolute;
+        border-radius: 50%;
+        background: purple;
+        width: 30px;
+        height: 30px;
+        right: 10px;
+        top: 10px;
+      }
+      .input__validator__status:before, .input__validator__status:after {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 18px;
+        border-radius: 40px;
+        background: var(--backgroundColor);
+      }
+      
+      .input-error input,
+      .input-error select,
+      .input-error textarea {
+        border-color: var(--accent3Color);
+      }
+      .input-error .feedback-form {
+        color: var(--accent3Shade3);
+      }
+      .input-error .input__validator__status {
+        background: var(--accent3Color);
+      }
+      .input-error .input__validator__status:before {
+        transform: rotate(45deg) translateY(-5.5px) translateX(13.5px);
+      }
+      .input-error .input__validator__status:after {
+        transform: rotate(-45deg) translateY(13.5px) translateX(5.5px);
+      }
+      
+      .input-success input,
+      .input-success select,
+      .input-success textarea {
+        border-color: var(--accent2Color);
+      }
+      .input-success .feedback-form {
+        color: var(--accent2Shade4);
+      }
+      .input-success .input__validator__status {
+        background: var(--accent2Color);
+      }
+      .input-success .input__validator__status:before {
+        transform: rotate(45deg) translateY(-6px) translateX(16px);
+      }
+      .input-success .input__validator__status:after {
+        height: 7px;
+        transform: rotate(-45deg) translateY(16px) translateX(-5px);
+      }
+      
+      .feedback-form {
+        margin-top: 5px;
+        color: var(--neutralShade6);
+      }
+
+      #radios{
+          width: 100%;
+          text-align: center;
+          margin-right: 50px;
+      }
+      #checkboxees{
+        width: 100%;
+        text-align: center;
+        margin-right: 50px;
+      }
+
+      @media (max-width: 992px) {
+        main {
+          grid: repeat(9, fit-content(300px))/100%;
+          grid-template-areas: "colors" "typography" "buttons" "links" "inputs" "badges" "tooltips" "alerts" "loading";
+        }
+        main > section:not(:last-child) {
+          border: 1px solid var(--accentColor);
+          border-width: 0 0 1px;
+        }
+        main > section:last-child {
+          border-width: 0;
+        }
+      
+        .typography,
+        .buttons-wrapper {
+          padding-bottom: 40px;
+        }
+      
+        .tooltips {
+          padding-bottom: 60px;
+        }
+      
+        .inputs-selects .inputs,
+        .inputs-selects .textarea-select {
+          grid-column: span 6;
+        }
+      
+        .inputs-selects .toggle-buttons,
+        .inputs-selects .checkboxes,
+        .inputs-selects .radio-buttons {
+          grid-column: span 3;
+        }
+        #Doggy{
+            margin-left: 200px;
+        }
+        #cat{
+            margin-left: 15px;
+        }
+
+      }
+      
+/*variations*/
+  input.variation {
+    display: none;
+  }
+  input.variation + label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 30px 20px 0;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 6px solid #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+      @media (max-width: 500px) {
+        input.variation + label {
+          margin: 70px 20px 20px;
+        }
+        #Doggy{
+            margin-left: 50px;
+        }
+        #cat{
+            margin-left: 20px;
+        }
+        #submit{
+            margin-left: -41px;
+        }
+      }
